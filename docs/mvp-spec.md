@@ -1,27 +1,61 @@
 # Chikomat MVP Specification
 
 ## Goal
-Build a mobile-first irrigation management system for managing olive grove plot watering sessions.
+Build a mobile-first irrigation management system for managing olive grove watering sessions.
 
-## Core Users
-- Family member
-- Admin
+## Users
+- Field user: starts and manages irrigation sessions
+- Admin: manages plots, users, settings, and history
 
-## MVP Features
-1. Manage plots
-2. Manage users
-3. Start irrigation session
-4. Add water meter readings
-5. Calculate flow rate
-6. Estimate remaining time and target meter value
-7. Close irrigation session
-8. View irrigation history
-9. Basic weather forecast
-10. Basic dashboard analytics
+## MVP Scope
+
+### 1. Plot Management
+Admin can:
+- Create plot
+- Edit plot name
+- Set target cubic meters per irrigation
+- Activate / deactivate plot
+
+Field user can:
+- View active plots
+- Select plot for irrigation
+
+### 2. User Management
+- Add family members / operators
+- Select current user on first visit
+- Store selected user locally in browser
+
+### 3. Irrigation Session
+Field user can:
+- Select plot
+- Enter opening meter reading
+- Enter second reading
+- See calculated flow rate
+- See estimated finish time
+- Add intermediate readings
+- Close session with final meter reading
+
+### 4. History
+Admin can view:
+- Date
+- Plot
+- User
+- Start/end readings
+- Total cubic meters
+- Flow rate
+- Status
+- Notes
+
+### 5. Basic Weather
+- Show current weather
+- Show 5-day forecast
+- Future: rainfall-based recommendation
 
 ## Out of Scope for MVP
+- Push notifications
 - Full offline sync
-- Advanced AI recommendations
+- AI recommendations
+- Advanced permissions
+- Payment/subscription
 - Native mobile app
-- Complex permissions
 - Machine learning anomaly detection
